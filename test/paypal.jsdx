@@ -1,0 +1,44 @@
+<schema
+  xmlns="http://www.jsonx.org/schema-0.3.1.xsd"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.jsonx.org/schema-0.3.1.xsd http://www.jsonx.org/schema-0.3.1.xsd">
+  <string name="currency" pattern="USD|GBP|CAD|EUR"/>
+  <number name="money" range="[0,]" scale="2"/>
+  <string name="dateTime" pattern="(-?\d{4}-((0[13578]|1[02])-(0[1-9]|[12]\d|3[01])|(02-(0[1-9]|1\d|2\d))|((0[469]|11)-(0[1-9]|[12]\d|30)))) (([01]\d)|(2[0-3])):[0-5]\d:[0-5]\d(\.\d{1,9})?"/>
+  <object name="link" abstract="true">
+    <property name="href" xsi:type="string"/>
+    <property name="rel" xsi:type="string"/>
+    <property name="method" xsi:type="string" pattern="GET|POST"/>
+  </object>
+  <object name="message">
+    <property name="ID" xsi:type="string"/>
+    <property name="version" xsi:type="string" pattern="\d+(\.\d+)*"/>
+    <property name="create_time" xsi:type="reference" type="dateTime"/>
+    <property name="resource_type" xsi:type="string"/>
+    <property name="event_type" xsi:type="string"/>
+    <property name="summary" xsi:type="string"/>
+    <property name="resource" xsi:type="object">
+      <property name="id" xsi:type="string"/>
+      <property name="state" xsi:type="string"/>
+      <property name="amount" xsi:type="object">
+        <property name="total" xsi:type="reference" type="money"/>
+        <property name="currency" xsi:type="reference" type="currency"/>
+      </property>
+      <property name="refund_to_payer" xsi:type="object">
+        <property name="amount" xsi:type="reference" type="money"/>
+        <property name="currency" xsi:type="reference" type="currency"/>
+      </property>
+      <property name="parent_payment" xsi:type="string"/>
+      <property name="sale_id" xsi:type="string"/>
+      <property name="create_time" xsi:type="reference" type="dateTime"/>
+      <property name="update_time" xsi:type="reference" type="dateTime"/>
+      <property name="currency" xsi:type="string"/>
+      <property name="links" xsi:type="array">
+        <reference type="link"/>
+      </property>
+    </property>
+    <property name="links" xsi:type="array">
+      <reference type="link"/>
+    </property>
+  </object>
+</schema>

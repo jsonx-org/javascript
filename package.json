@@ -1,0 +1,14 @@
+{
+  "name": "jsonx",
+  "version": "0.1.0",
+  "description": "JSONx Framework for JavaScript. A collection of specifications and reference implementations that provide structural and functional patterns intended to help developers work with JSON. The JSONx Framework is based on the JSON Schema Definition Language, which is a schema language inspired by the [XMLSchema] specification. This document introduces the JSONx Framework, and presents a directory of links to its constituent parts and related resources.",
+  "main": "",
+  "scripts": {
+    "test": "mocha test/test.js"
+  },
+  "author": "Seva Safris",
+  "license": "MIT",
+  "dependencies": {
+    "xml-js": "^1.6.11"
+  }
+}
