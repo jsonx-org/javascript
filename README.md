@@ -69,8 +69,8 @@ The <ins>JSON Schema Definition Language</ins> can be expressed in 2 forms: <ins
 
    ```json
    {
-     "jx:ns": "http://www.jsonx.org/schema-0.3.1.jsd",
-     "jx:schemaLocation": "http://www.jsonx.org/schema-0.3.1.jsd http://www.jsonx.org/schema.jsd",
+     "jx:ns": "http://www.jsonx.org/schema-0.3.jsd",
+     "jx:schemaLocation": "http://www.jsonx.org/schema-0.3.jsd http://www.jsonx.org/schema.jsd",
 
      "myNumber": { "jx:type": "number", "range": "[-1,1)" },
      "myString": { "jx:type": "string", "pattern": "[a-z]+" },
@@ -117,9 +117,9 @@ The <ins>JSON Schema Definition Language</ins> can be expressed in 2 forms: <ins
 
    ```xml
    <schema
-     xmlns="http://www.jsonx.org/schema-0.3.1.xsd"
+     xmlns="http://www.jsonx.org/schema-0.3.xsd"
      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-     xsi:schemaLocation="http://www.jsonx.org/schema-0.3.1.xsd http://www.jsonx.org/schema.xsd">
+     xsi:schemaLocation="http://www.jsonx.org/schema-0.3.xsd http://www.jsonx.org/schema.xsd">
 
      <number name="myNumber" range="[-1,1)"/>
      <string name="myString" pattern="[a-z]+"/>
