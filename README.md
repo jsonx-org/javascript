@@ -1,5 +1,7 @@
 # JSONx Framework for JavaScript
 
+> **JSON Schema for the enterprise**
+
 ## Abstract
 
 The <ins>JSONx Framework</ins> is a collection of specifications and reference implementations that provide <ins>structural</ins> and <ins>functional</ins> patterns intended to help developers work with JSON. The <ins>JSONx Framework</ins> defines the [<ins>JSON Schema Definition Language</ins>][schema], which is a <ins>schema language</ins> designed in close resemblance to the [XMLSchema][xmlschema] specification.
@@ -83,7 +85,7 @@ The <ins>JSON Schema Definition Language</ins> can be expressed in 2 forms: <ins
              { "jx:type": "reference", "type": "myString" },
              { "jx:type": "array", "elements": [
                { "jx:type": "boolean" },
-               { "jx:type": "number", "form": "integer", "range": "[0,100]" },
+               { "jx:type": "number", "range": "[0,100]", "scale": 0 },
                { "jx:type": "string", "pattern": "[0-9]+" },
                { "jx:type": "any", "types": "myNumber myString" } ]},
            { "jx:type": "reference", "type": "myObject" },
@@ -130,7 +132,7 @@ The <ins>JSON Schema Definition Language</ins> can be expressed in 2 forms: <ins
          <reference type="myString"/>
          <array>
            <boolean/>
-           <number form="integer" range="[0,100]"/>
+           <number range="[0,100]" scale="0"/>
            <string pattern="[0-9]+"/>
            <any types="myNumber myString"/>
          </array>
