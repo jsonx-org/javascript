@@ -4,7 +4,7 @@
 
 ## Abstract
 
-The <ins>JSONx Framework</ins> is a collection of specifications and reference implementations that provide <ins>structural</ins> and <ins>functional</ins> patterns intended to help developers work with JSON. The <ins>JSONx Framework</ins> defines the [<ins>JSON Schema Definition Language</ins>][schema], which is a <ins>schema language</ins> designed in close resemblance to the [XMLSchema][xmlschema] specification.
+The <ins>JSONx Framework</ins> is a collection of specifications and reference implementations that provide <ins>structural</ins> and <ins>functional</ins> patterns intended to help developers work with JSON. The <ins>JSONx Framework</ins> defines the [<ins>JSON Schema Definition Language</ins>][schema], which is a <ins>schema language</ins> designed in close resemblance to the [XMLSchema<sup>❐</sup>][xmlschema] specification.
 
 This document introduces the <ins>JSONx Framework</ins>, and presents a directory of links to its constituent parts and related resources.
 
@@ -153,11 +153,11 @@ This example defines a schema with 3 types that express the following structure:
 
 ### <b>2.4</b> JSD vs JSDx
 
-The <ins>JSDx</ins> format offers XML validation, and using an XML IDE like [oXygen XML Editor][oxygenxml] offers edit-time XML validation, such as:
+The <ins>JSDx</ins> format offers XML validation, and using an XML IDE like [oXygen XML Editor<sup>❐</sup>][oxygenxml] offers edit-time XML validation, such as:
 
 <img src="https://user-images.githubusercontent.com/1258414/61751752-aae93800-ada9-11e9-88b1-65de08f125b5.png" width="75%">
 
-When using the <ins>JSDx</ins> format with the [oXygen XML Editor][oxygenxml], the auto-completion features of the editor will guide you in writing the schema. With the <ins>JSDx</ins> format, the XML editor will also validate keys and keyrefs to ensure that declared types are referenced correctly.
+When using the <ins>JSDx</ins> format with the [oXygen XML Editor<sup>❐</sup>][oxygenxml], the auto-completion features of the editor will guide you in writing the schema. With the <ins>JSDx</ins> format, the XML editor will also validate keys and keyrefs to ensure that declared types are referenced correctly.
 
 ### <b>2.5</b> Specification
 
@@ -203,6 +203,7 @@ This project is licensed under the MIT License - see the [LICENSE.txt](LICENSE.t
 [#jsd]: #3-json-schema-definition-language
 
 [java]: ../../../java
-[oxygenxml]: https://www.oxygenxml.com/xml_editor/download_oxygenxml_editor.html
 [schema]: ../../../schema
+
+[oxygenxml]: https://www.oxygenxml.com/xml_editor/download_oxygenxml_editor.html
 [xmlschema]: http://www.w3.org/2001/XMLSchema
