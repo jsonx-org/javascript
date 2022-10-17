@@ -28,7 +28,8 @@ _The <ins>JSONx Framework for JavaScript</ins> is work in progress, and does not
 <samp>&nbsp;&nbsp;&nbsp;&nbsp;</samp>3.3 [Getting Started](#33-getting-started)<br>
 <samp>&nbsp;&nbsp;&nbsp;&nbsp;</samp>3.4 [Specification](#34-specification)<br>
 <samp>&nbsp;&nbsp;</samp>4 [<ins>Contributing</ins>](#4-contributing)<br>
-<samp>&nbsp;&nbsp;</samp>5 [<ins>License</ins>](#5-license)
+<samp>&nbsp;&nbsp;</samp>5 [<ins>Special Thanks</ins>](#5-special-thanks)<br>
+<samp>&nbsp;&nbsp;</samp>6 [<ins>License</ins>](#6-license)
 
 ## <b>1</b> <ins>Introduction</ins>
 
@@ -195,7 +196,12 @@ Pull requests are welcome. For major changes, please [open an issue](../../issue
 
 Please make sure to update tests as appropriate.
 
-## <b>5</b> <ins>License</ins>
+## <b>5</b> <ins>Special Thanks</ins>
+
+[![Java Profiler](https://www.ej-technologies.com/images/product_banners/jprofiler_small.png)](https://www.ej-technologies.com/products/jprofiler/overview.html)
+<br><sub>_Special thanks to [EJ Technologies](https://www.ej-technologies.com/) for providing their award winning Java Profiler ([JProfiler](https://www.ej-technologies.com/products/jprofiler/overview.html)) for development of the JSONx Framework._</sub>
+
+## <b>6</b> <ins>License</ins>
 
 This project is licensed under the MIT License - see the [LICENSE.txt](LICENSE.txt) file for details.
 
